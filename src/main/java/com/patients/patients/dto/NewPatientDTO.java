@@ -2,6 +2,8 @@ package com.patients.patients.dto;
 
 
 
+import java.time.LocalDate;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -21,7 +23,7 @@ public class NewPatientDTO {
     @NotNull(message = "weight width can't be null.")
     private float weight; 
     @NotNull(message = "weight width can't be null.")
-    private String dateOfAdmission;  
+    private LocalDate dateOfAdmission;  
     @Min(message = "Age can't be lower 0 age", value = 0)
     @Max(message = "Age can't be more 60 age",value = 60)
     private short age;   
